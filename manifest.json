@@ -3,11 +3,11 @@
   "description": "Transferfunds to any wallet",
   "version": "1.0",
   "manifest_version": 3,
-  "actions": {
-    "defualt_popup": "popup.html",
-    "defualt_icon": "favicon.png"
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "favicon.png"
   },
-  "icon": {
+  "icons": {
     "16": "favicon.png",
     "32": "favicon.png",
     "48": "favicon.png",

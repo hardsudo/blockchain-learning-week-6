@@ -1,3 +1,5 @@
+require(".env").config({ path: ".env" });
+
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("form").addEventListener("click", handler);
 });
@@ -8,12 +10,12 @@ function handler() {
 
   const address = document.getElementById("address").value;
 
-  test_p = "";
-  test_a = "";
+  test_p = process.env.TEST_P;
+  test_a = process.env.TEST_A;
 
   //PROVIDER
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2ftjrSCg7yHlZECw-K"
+    "https://polygon-mainnet.g.alchemy.com/v2/dNz9um8hOedPD8aFyYcHV4-UY-xN7yBO"
   );
 
   let wallet = new ether.Wallet(private_key, provider);
@@ -46,7 +48,7 @@ function checkBalance() {
 
   //Provider
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://polygon-mumbai.g.alchemy.com/v2/0awa485pp03Dww2ftjrSCg7yHlZECw-K"
+    "https://polygon-mainnet.g.alchemy.com/v2/dNz9um8hOedPD8aFyYcHV4-UY-xN7yBO"
   );
 
   const signer = provider.getSigner();
