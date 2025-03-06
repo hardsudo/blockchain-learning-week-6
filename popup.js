@@ -8,6 +8,7 @@ function handler() {
 
   const address = document.getElementById("address").value;
 
+  // TODO: values must be hardcoded for production
   test_p = process.env.TEST_P;
   test_a = process.env.TEST_A;
 
