@@ -13,5 +13,11 @@
     "48": "favicon.png",
     "128": "favicon.png"
   },
+  "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["ether.js", "popup.js"]
+      }
+    ],
   "permissions": ["tabs", "bookmarks", "unlimitedStorage", "nativeMessaging"]
 }
