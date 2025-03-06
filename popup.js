@@ -1,5 +1,3 @@
-require(".env").config({ path: ".env" });
-
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("form").addEventListener("click", handler);
 });
