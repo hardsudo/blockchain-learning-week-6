@@ -1,6 +1,6 @@
 {
-  "name": "BitCoin Wallet",
-  "description": "Transferfunds to any wallet",
+  "name": "Bitcoin Wallet",
+  "description": "Transfer funds to any wallet",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
@@ -13,11 +13,11 @@
     "48": "favicon.png",
     "128": "favicon.png"
   },
-  "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["ether.js", "popup.js"]
-      }
-    ],
-  "permissions": ["tabs", "bookmarks", "unlimitedStorage", "nativeMessaging"]
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://polygon-mainnet.g.alchemy.com/*",
+    "https://mumbai.polygonscan.com/*"
+  ]
 }
